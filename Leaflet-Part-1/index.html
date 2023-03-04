@@ -3,38 +3,47 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Earthquake Activity Past 7 Days Greater Than 4.5</title>
+  <title>Weekly Earthquake Activity</title>
 
   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-  integrity="ssha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
-  crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" 
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" 
+    crossorigin="" />
 
   <!-- My CSS -->
-  <link rel="stylesheet" type="text/css" href="./static/css/style.css">
-</head>
+  <style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    #map,
+    body,
+    html {
+        height: 100%;
+    }
+</style>
 
 <body>
 
   <!-- The div that holds map -->
-  <div id="map">
-    <div style="padding-bottom: 20px;" class="leaflet-bottom">
-
-    </div>
-  </div>
+  <div id="map"></div>
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
     crossorigin=""></script>
+
   <!-- D3 JavaScript -->
   <script src="https://d3js.org/d3.v5.min.js"></script>
+
   <!-- API key -->
-  <script type="text/javascript" src="./static/js/config.js"></script>
+  <script type="text/javascript" src="static/js/config.js"></script>
+
   <!-- My JavaScript -->
-  <script type="text/javascript" src="./static/js/logic.js"></script>
+  <script type="text/javascript" src="static/js/logic.js"></script>
 </body>
 
 </html>
